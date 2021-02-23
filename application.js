@@ -1,4 +1,4 @@
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.swiper-products', {
 	loop: true,
 	slidesPerView: 2,
 	spaceBetween: 10,
@@ -16,22 +16,18 @@ var mySwiper = new Swiper ('.swiper-container', {
 
   let swipeOptionTop = {
 	loop: true,
-	effect: 'slide',
-	speed: 2000,
+	effect: 'fade',
 	autoplay: {
-	  delay: 30000,
+	  delay: 3000,
 	  disableOnInteraction: false,
 	},
+	speed: 3000,
 	pagination: {
 	  el: '.swiper-pagination',
 	  clickable: true,
 	}
   }
-  var mySwiperTop = new Swiper('.swiper-container-top', swipeOptionTop);
-
-  mySwiperTop.on('init', function () {
-	console.log('initialized');
-  });
+  var mySwiperIndex = new Swiper('.swiper-index', swipeOptionTop);
 
 $(function () {
     var pagetop = $('#page_top');

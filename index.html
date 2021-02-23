@@ -6,6 +6,7 @@
       <title>ITOYA</title>
       <meta name="description" content="園芸の伊東屋">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="lib/animationLibrary/bounce.css">
       <link rel="stylesheet" href="stylesheet.css">
       <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
@@ -43,33 +44,33 @@
         </nav>
         <!--ヘッダー終了-->
       
-        <!--オススメのスライド3 start-->
-        <div class="swiper-container-top">
+        <!--メインビジュアル start-->
+        <div class="swiper-container swiper-index">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-9.jpg">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-1.jpg">
+                <p class="swiper-caption"></P>
               </div>
               <div class="swiper-slide">
-                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-10.jpg">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-2.jpg">
               </div>
               <div class="swiper-slide">
-                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-11.jpg">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-3.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-4.jpg">
               </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
-        <!--オススメのスライド end-->
+        <!--メインビジュアル end-->
 
       　<!--メイン画像開始-->
-        <section>
-          <div class="container pt-4 pb-5 border-bottom">
-          </div>
-        </section>
           <!--Products開始-->
-          <section id="Products" class="head py-5 text-center border-bottom bg-white" >
+          <section id="Products" class="container head pb-5 text-center border-bottom bg-white" >
             <h5 class="Products-upper">取扱い商品</h5>
             <h5 class="Products-downer pb-5"><span class="head-downer">Products</span></h5>
             <div class="container">
@@ -240,57 +241,65 @@
             <!--Shopinfo習志野店終了-->
           </section>
           <!--Shopinfo終了-->
-          <!--Twitter start-->
-      <div class="container pt-5">
-        <div class="row"></div>
-        <div class="col-md-6">
-          <section id="sns">
-            <div class="wrapper">
-                <div class="sns-box">
-                  <h5 class="sub-title text-center">Twitter</h5>
-                  <a class="twitter-timeline" data-lang="ja" data-height="315" href="https://twitter.com/itoyafunabashi?ref_src=twsrc%5Etfw">Tweets by itoyafunabashi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <!--News start-->
+        <section id="News" class="pt-5 pb-3 text-center border-bottom bg-light">
+            <h5 class="News-upper">What's New</h5>
+            <h5 class="News-downer pb-2"><span class="head-downer">伊東屋の最新情報</span></h5>
+          <section>
+              <section id="sns" class="text-center pt-5 bg-light">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-8">
+                      <section id="sns-twitter">
+                        <a class="twitter-timeline" data-chrome="noheader" data-lang="ja" data-height="400" data-theme="light" href="https://twitter.com/itoyafunabashi?ref_src=twsrc%5Etfw">Tweets by itoyafunabashi</a> 
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                      </section>
+                    </div>
+                  </div>
                 </div>
-                <div class="sns-box">
-                  <h5 class="sub-title">Instagram</h5>
-                </div>
-            </div>
+              </section>
+            </section>
           </section>
+
+            <!--News end-->
+          <!--footer開始-->
+      <footer class="footer-1 bg-light">
+        <div class="container text-center">
+          <ul class="nav justify-content-around">
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Shopinfo">Shop info</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      </div>
-          <footer class="footer-1 bg-light">
-            <div class="container text-center">
-              <ul class="nav justify-content-around">
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Shop info</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+      </footer>
+      <!--footer終了-->
+      <footer class="footer-2 bg-dark text-light">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div>
+              <a href="https://twitter.com/itoyafunabashi">
+              <i class="fab fab-twitter fa-twitter pt-3 pr-3 pl-3"></i>
+              </a>
             </div>
-          </footer>
-          <footer class="footer-2 bg-dark text-light">
-            <div class="container">
-              <div class="row justify-content-center">
-              <div>
-                <i class="fab fab-insta fa-instagram pt-3 pr-3 pl-3"></i>
-              </div>
-              <div>
-                <i class="fab fab-twitter fa-twitter pt-3 pr-3 pl-3"></i>
-              </div>
-              </div>
+            <div>
+              <a href="https://www.instagram.com/itoyafunabashi/">
+              <i class="fab fab-insta fa-instagram pt-3 pr-3 pl-3"></i>
+              </a>
             </div>
-          
+          </div>
+        </div>
             <div class="Copyright container text-center py-3">
               <p>Coptright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
             </div>
