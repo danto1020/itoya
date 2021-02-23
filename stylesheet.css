@@ -1,9 +1,9 @@
-.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
+.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
     font-family: serif;
     color: #4b4949;
 }
 
-.Products-upper, .Services-upper, .Shopinfo-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper {
+.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper {
     position: relative;
     display: inline-block;
     margin-bottom: 1em;
@@ -41,6 +41,19 @@
     bottom: -10px;
     display: inline-block;
     width: 100px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .News-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
     height: 1px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -122,7 +135,7 @@
 
 /*ボタンの上部、日本語部分をフォントサイズを変更*/
 .row .btn a .upper {
-    font-size: 16px;
+    font-size: 14px;
     font-family: serif;
 }
 
@@ -151,6 +164,7 @@ h5 .head-downer {
 
   .fab-insta, .fab-twitter {
     font-size: 3em;
+    color: #fff;
   }
 
   .Copyright p {
@@ -211,3 +225,11 @@ h5 .head-downer {
     color: #463f3f;
 }
 
+ .link-disable {
+   background-color: #463f3f;
+   pointer-events: none;
+ }
+
+ .color-white {
+  color: #fff;
+ }
