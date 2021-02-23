@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap4 フォームコンポーネント( HTMLバリデーション )</title>
+
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font Awesome5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!--自作CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<!-- Navigation -->
+<!--ヘッダー開始-->
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand navbar-brand-center"  href="index.html">
+          <img class="nav-logo" src="images/itoya_lpgotype1.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Products">Products<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Services">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Shopinfo">Shop info</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--ヘッダー終了-->
+
+<h1 class="text-center">Contact</h1>
+
+<!-- Page Content -->
+<div class="container mt-5 p-lg-5 bg-light">
+
+    <form class="needs-validation" novalidate>
+
+      <!-- 問い合わせ内容 -->
+      <div class="form-group row justify-content-center">
+        <label for="select1a" class="col-sm-2 col-form-label">お問い合わせ内容</label>
+        <div class="col-sm-8">
+          <select id="select1a" class="form-control">
+            <option value='' disabled selected style='display:none;'>選択してください</option>
+            <option>商品について</option>
+            <option>レッスンのご応募について</option>
+            <option>求人のご応募について</option>
+          </select>
+        </div>
+      </div>
+      <!-- /問い合わせ内容 -->
+      
+      <!--氏名-->
+      <div class="form-group row justify-content-center">
+        <label for="inputEmail" class="col-sm-2 col-form-label">お名前</label>
+        <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail" placeholder="氏名" required>
+            <div class="invalid-feedback">入力してください</div>
+        </div>
+      </div>
+      <!--/氏名-->
+
+      <!--Eメール-->
+      <div class="form-group row justify-content-center">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Eメール</label>
+          <div class="col-md-8">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Eメール" required>
+              <div class="invalid-feedback">入力してください</div>
+          </div>
+      </div>
+      <!--/Eメール-->
+
+      <!--備考欄-->
+      <div class="form-group row justify-content-center">
+          <label for="Textarea" class="col-sm-2 col-form-label">お問い合わせ</label>
+          <div class="col-md-8">
+            <textarea class="form-control" id="Textarea" rows="5" placeholder="お問い合わせ内容" required></textarea>
+            <div class="invalid-feedback">入力してください</div>
+          </div>
+      </div>
+      <!--/備考欄-->
+
+      <!--ボタンブロック-->
+      <div class="form-group row justify-content-center">
+          <div class="col-md-3">
+              <button type="submit" class="btn btn-primary btn-block">登録</button>
+          </div>
+      </div>
+      <!--/ボタンブロック-->
+
+    </form>
+</div><!-- /container -->
+
+<footer class="footer-1 bg-light">
+  <div class="container text-center">
+    <ul class="nav justify-content-around">
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="#">Shop info</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<footer class="footer-2 bg-dark text-light">
+  <div class="container">
+    <div class="row justify-content-center">
+    <div>
+      <i class="fab fab-insta fa-instagram pt-3 pr-3 pl-3"></i>
+    </div>
+    <div>
+      <i class="fab fab-twitter fa-twitter pt-3 pr-3 pl-3"></i>
+    </div>
+    </div>
+  </div>
+
+  <div class="Copyright container text-center py-3">
+    <p>Coptright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
+  </div>
+  <div id="page_top"><a href="#"></a></div>
+</footer> 
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<!-- 郵便番号から住所自動入力 -->
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<!-- Validation -->
+<script>
+
+    // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+    (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+            // カスタムブートストラップ検証スタイルを適用するすべてのフォームを取得
+            var forms = document.getElementsByClassName('needs-validation');
+            // ループして帰順を防ぐ
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                // submitボタンを押したら以下を実行
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+</body>
+</html>

@@ -8,123 +8,228 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="stylesheet.css">
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
         <title>園芸の伊東屋</title>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-white"                                                                       >
-          <a class="navbar-brand navbar-brand-center"  href="index.html">
-            <img src="images/itoya_lpgotype1.png" width="100" height="50">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#Products">Products<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#Services">Services</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#Shopinfo">Shop info</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="Aboutus.html">About us</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="Contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!--ヘッダー終了-->
-        <!--当店のオススメ開始-->
-        <section>
-          <div class="container text-center bg-light">
-            <div class="row">
-              <div id="Cacuti-Succulents">
-                <img class="recommend-all pb-5 mt-0" src="images/main-visual-2.jpg">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+      <!--ヘッダー開始-->
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand navbar-brand-center"  href="index.html">
+          <img class="nav-logo" src="images/itoya_lpgotype1.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Products">Products<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Services">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html#Shopinfo">Shop info</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--ヘッダー終了-->
+
+      <!--当店のオススメ開始-->
+      <section>
+        <div class="container text-center bg-light">
+          <div class="row">
+            <div id="Cacuti-Succulents">
+              <div class="container">
+                <img class="Products-main pb-5 mt-0" src="images/main-visual-2.jpg">
                 <h5 class="recommend-upper pt-5">当店のオススメ</h5>
-                <h5 class="recommend-downer pb-5"><span class="head-downer">Recommend</span></h5>
-                <h5 class="recommend-1 text-left"> ハオルチア/Haworthia</h5>
-                <p class="recommend-1-1 text-left">岩陰などに生息する植物。<br>数十種類の品種が出回っており、高い人気を誇る。</p>
-                <img class="recommend-1-2" src="images/Cacuti-Succulents-2.jpg">    
+                <h5 class="recommend-downer pb-2"><span class="head-downer">Recommend</span></h5>
+                <!--オススメの商品の見出しをrecommend-数字-aで表現し、説明をrecommend-数字-bで表現する-->
               </div>
-            </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+      <!--当店のオススメ終了-->
+
+      <!--オススメの表示部分1 start-->
+      <div class="container py-5 bg-light">
+        <h5 class="recommend-1-a text-left"> ハオルチア/Haworthia</h5>
+        <p class="recommend-1-b text-left">岩陰などに生息する植物。<br>数十種類の品種が出回っており、高い人気を誇る。</p>
+
+        <!--オススメのスライド1 start-->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-1.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-2.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-3.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-4.jpg">
+              </div>
           </div>
-        </section>
-        <!--当店のオススメ終了-->
-          <!--Products開始-->
-          <section id="Products" class="head py-5 text-center border-bottom bg-white" >
-            <h5 class="Products-upper">取扱い商品</h5>
-            <h5 class="Products-downer pb-5"><span class="head-downer">Products</span></h5>
-            <div class="container">
-              <div class="row">
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="Cacuti&Succulents.html"><span class="upper">サボテン 多肉植物</span><br><hr>Cacuti & Succulents</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">観葉植物</span><hr>Ornamental foliage plants</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">洋蘭</span><hr>Orchids</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">苗</span><hr>Seedlings</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">生花</span><hr>Flowers</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">種</span><hr>Seeds</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">園芸資材</span><hr>Gardening materials</a>
-                  </button>
-                  <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
-                    <a href="#"><span class="upper">雑貨</span><hr>Goods</a>
-                  </button>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--オススメのスライド1 end-->
+      </div>
+      <!--オススメの表示部分1 end-->
+      <!--オススメの表示部分2 start-->
+      <div class="container bg-light">
+        <h5 class="recommend-1-a text-left"> デッキィア/Dyckia</h5>
+        <p class="recommend-1-b text-left">岩陰などに生息する植物。<br>数十種類の品種が出回っており、高い人気を誇る。</p>
+
+        <!--オススメのスライド2 start-->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-5.jpg">
               </div>
-            </div>
-          </section>
-          <!--Products終了-->
-          <!--footer開始-->
-          <footer class="footer-1 bg-light">
-            <div class="container text-center">
-              <ul class="nav justify-content-around">
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Shop info</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="footer-nav-link nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </footer>
-          <!--footer終了-->
-          <footer class="footer-2 bg-dark text-light">
-            <div>
-              <a href="#">
-                <img class="d-block mx-auto py-2" src="images/icon-instagram-square-silhouette.png" width=65 height=65>
-              </a>
-            </div>
-            <div class="Copyright container text-center py-3">
-              <p>Coptright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
-            </div>
-            <div id="page_top"><a href="#"></a></div>
-          </footer> 
-          
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-6.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-7.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-8.jpg">
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--オススメのスライド2 end-->
+      </div>
+      <!--オススメの表示部分2 end-->
+      <!--オススメの表示部分3 start-->
+      <div class="container bg-light">
+        <h5 class="recommend-1-a text-left"> ディオスコレア/Dioscorea</h5>
+        <p class="recommend-1-b text-left">岩陰などに生息する植物。<br>数十種類の品種が出回っており、高い人気を誇る。</p>
+      
+        <!--オススメのスライド3 start-->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-9.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-10.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="recommend-all pb-5 mt-0" src="images/Cacuti-Succulents/Cacuti-Succulents-11.jpg">
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--オススメのスライド3 end-->
+      </div>
+      <!--オススメの表示部分1 end-->
+      <!--オススメの表示部分3 end-->
+      <!--取り扱い店舗の表示-->
+      <div class="container text-center bg-light">
+        <h5 class="dealing-upper pt-5">サボテン 多肉植物</h5>
+        <h5 class="dealing-downer pb-5"><span class="head-downer">船橋店 <i class="fas fas-yes fa-check-circle"></i>  習志野店 <i class="fas fas-no fa-times-circle"></i></span></h5>
+      </div>
+
+                  
+      <!--Products開始-->
+      <section id="Products" class="container head py-5 text-center border-bottom bg-light" >
+        <h5 class="Products-upper">取扱い商品</h5>
+        <h5 class="Products-downer pb-5"><span class="head-downer">Products</span></h5>
+        <div class="container">
+          <div class="row">
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="Cacuti&Succulents.html"><span class="upper">サボテン 多肉植物</span><br><hr>Cacuti & Succulents</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">観葉植物</span><hr>Ornamental foliage plants</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">洋蘭</span><hr>Orchids</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">苗</span><hr>Seedlings</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">生花</span><hr>Flowers</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">種</span><hr>Seeds</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">園芸資材</span><hr>Gardening materials</a>
+              </button>
+              <button type="button"  class="btn d-inline-flex justify-content-around py-4 col-6 col-md-3">
+                <a href="#"><span class="upper">雑貨</span><hr>Goods</a>
+              </button>
+          </div>
+        </div>
+      </section>
+      <!--Products終了-->
+
+      <!--footer開始-->
+      <footer class="footer-1 bg-light">
+        <div class="container text-center">
+          <ul class="nav justify-content-around">
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="index.html#Shopinfo">Shop info</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer-nav-link nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!--footer終了-->
+      <footer class="footer-2 bg-dark text-light">
+        <div class="container">
+          <div class="row justify-content-center">
+          <div>
+            <i class="fab fab-insta fa-instagram pt-3 pr-3 pl-3"></i>
+          </div>
+          <div>
+            <i class="fab fab-twitter fa-twitter pt-3 pr-3 pl-3"></i>
+          </div>
+          </div>
+        </div>
+        <div class="Copyright container text-center py-3">
+          <p>Coptright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
+        </div>
+        <div id="page_top"><a href="#"></a></div>
+      </footer>
+
+      <script type="text/javascript" src="application.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     </body>
 
 </html>

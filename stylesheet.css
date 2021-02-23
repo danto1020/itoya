@@ -1,9 +1,9 @@
-.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .recommend-upper, .recommend-downer, .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
+.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
     font-family: serif;
     color: #4b4949;
 }
 
-.Products-upper, .Services-upper, .Shopinfo-upper, .Cacuti-Succulents-upper, .recommend-upper {
+.Products-upper, .Services-upper, .Shopinfo-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper {
     position: relative;
     display: inline-block;
     margin-bottom: 1em;
@@ -66,7 +66,7 @@
     position: absolute;
     bottom: -10px;
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 1px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -74,6 +74,31 @@
     background-color: #4b4949;
     }
 
+    .dealing-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }    
+
+.nav-logo {
+    width:150px;
+    height:auto;
+}
+
+.fas-yes {
+    color: #0c9618;
+}
+
+.fas-no {
+    color: #ac0909;
+}
 
 .btn a {
     font-family: "Times New Roman";
@@ -104,6 +129,7 @@
 /*見出し(h5)の下部、英語部分のフォントサイズ変更*/
 h5 .head-downer {
     font-size: 15px;
+    font-family: serif;
 }
 
 .head-Shop, .head-Accessmap {
@@ -121,6 +147,10 @@ h5 .head-downer {
   .footer-nav-link {
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #463f3f;
+  }
+
+  .fab-insta, .fab-twitter {
+    font-size: 3em;
   }
 
   .Copyright p {
@@ -163,14 +193,21 @@ h5 .head-downer {
       text-align: center;
 }
 
+.Products-main {
+    width: 100%;
+    opacity: 0.7;
+}
+
 .recommend-all {
       width: 100%;
-      opacity: 0.7;
 }
 
-.recommend-1-2 {
-      width:100%;
-      opacity: 0.8;
+.recommend-1-a{
+    font-family: serif;
+    color: #463f3f;
 }
-
+.recommend-1-b {
+    font-family: serif;
+    color: #463f3f;
+}
 
