@@ -1,5 +1,5 @@
 .Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Times New Roman', serif;
     color: #4b4949;
 }
 
@@ -136,29 +136,29 @@
 /*ボタンの上部、日本語部分のフォント*/
 .row .btn a .upper {
     font-size: 14px;
-    font-family: 'Noto Serif JP', serif;
+    font-family: serif;
 }
 
 /*見出し(h5)の下部、英語部分のフォントサイズ変更*/
 h5 .head-downer {
     font-size: 15px;
-    font-family: 'Noto Serif JP', 'Times New Roman', serif;
+    font-family:'Times New Roman';
 }
 
 .head-Shop, .head-Accessmap {
-    font-family: 'Noto Serif JP', 'Times New Roman', serif;
+    font-family:'Times New Roman', serif;
     color: #463f3f;
 }
 
 
   .table {
       font-size: 10px;
-      font-family: 'Noto Serif JP', 'Times New Roman', serif; 
+      font-family:'Times New Roman', serif; 
       color: #463f3f;
   }
   
   .footer-nav-link {
-      font-family: 'Noto Serif JP', 'Times New Roman', serif;
+      font-family:'Times New Roman', serif;
       color: #463f3f;
   }
 
@@ -168,7 +168,7 @@ h5 .head-downer {
   }
 
   .Copyright p {
-      font-family: 'Noto Serif JP', 'Times New Roman', serif;
+      font-family:'Times New Roman', serif;
       font-size: 10px;
   }
 
