@@ -18,10 +18,10 @@ var mySwiper = new Swiper ('.swiper-products', {
 	loop: true,
 	effect: 'fade',
 	autoplay: {
-	  delay: 3000,
+	  delay: 4000,
 	  disableOnInteraction: false,
 	},
-	speed: 3000,
+	speed: 4000,
 	pagination: {
 	  el: '.swiper-pagination',
 	  clickable: true,
