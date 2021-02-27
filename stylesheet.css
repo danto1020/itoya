@@ -212,9 +212,21 @@ h5 .head-downer {
   .fab-insta, .fab-twitter {
     font-size: 3em;
     color: #fff;
+    transition: all 0.6s ease 0s;
   }
 
 
+  .fab-insta:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+  
+  
+  .fab-twitter:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+  
 
   .Copyright p {
       font-family:'Times New Roman', serif;

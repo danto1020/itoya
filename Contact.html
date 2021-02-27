@@ -99,7 +99,7 @@
       <!--ボタンブロック-->
       <div class="form-group row justify-content-center">
           <div class="col-md-3">
-              <button type="submit" id="btn-contactForm" class="btn btn-primary btn-block">登録</button>
+              <button type="submit" id="contactForm-submitBtn" class="btn btn-primary btn-block">登録</button>
           </div>
       </div>
       <!--/ボタンブロック-->
@@ -158,6 +158,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<!-- StmpJs  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- 郵便番号から住所自動入力 -->
 <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <!-- Validation -->
@@ -185,10 +187,19 @@
     })();
 
     // メールを送信する
-    $('btn-contactForm').click(function() {
-      console.log('クリックされました！');
+    $('#contactForm-submitBtn').click(function() {
+      Email.send({
+        Host : "engei-itoya.sakura.ne.jp",
+        Username : "itoya",
+        Password : "s2Ln/LiHZcbp",
+        To : 'itoya@engei-itoya.sakura.ne.jp',
+        From : "ononinn@yahoo.co.jp",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
     })
-
 </script>
 </body>
 </html>
