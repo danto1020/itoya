@@ -190,11 +190,19 @@ h5 .head-downer {
 }
 
 
-  .table {
+.table {
       font-size: 10px;
       font-family:'Times New Roman', serif; 
       color: #463f3f;
-  }
+}
+
+.Garden-tree-pruning-image {
+    width: 100%;
+}
+
+.cats-image {
+    width: 100%;
+}
   
   .footer-nav-link {
       font-family:'Times New Roman', serif;
@@ -205,6 +213,8 @@ h5 .head-downer {
     font-size: 3em;
     color: #fff;
   }
+
+
 
   .Copyright p {
       font-family:'Times New Roman', serif;

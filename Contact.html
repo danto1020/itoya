@@ -99,7 +99,7 @@
       <!--ボタンブロック-->
       <div class="form-group row justify-content-center">
           <div class="col-md-3">
-              <button type="submit" class="btn btn-primary btn-block">登録</button>
+              <button type="submit" id="btn-contactForm" class="btn btn-primary btn-block">登録</button>
           </div>
       </div>
       <!--/ボタンブロック-->
@@ -147,7 +147,7 @@
     </div>
   </div>
   <div class="Copyright container text-center py-3">
-    <p>Coptright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
+    <p>Copyright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
   </div>
   <div id="page_top"><a href="#"></a></div>
 </footer> 
@@ -183,6 +183,12 @@
             });
         }, false);
     })();
+
+    // メールを送信する
+    $('btn-contactForm').click(function() {
+      console.log('クリックされました！');
+    })
+
 </script>
 </body>
 </html>
