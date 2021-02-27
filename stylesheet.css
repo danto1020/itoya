@@ -1,9 +1,9 @@
-.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer {
+.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer, .Aboutus-upper, .Aboutus-downer, .Companyinfo-upper, .Companyinfo-downer, .Ourcats-upper, .Ourcats-downer {
     font-family: 'Times New Roman', serif;
     color: #4b4949;
 }
 
-.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper {
+.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper, .Aboutus-upper, .Companyinfo-upper, .Ourcats-upper {
     position: relative;
     display: inline-block;
     margin-bottom: 1em;
@@ -98,7 +98,46 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #4b4949;
-    }    
+    }
+
+    .Aboutus-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Companyinfo-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Ourcats-upper:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
 
 .nav-logo {
     width:150px;
@@ -233,3 +272,17 @@ h5 .head-downer {
  .color-white {
   color: #fff;
  }
+
+
+.Replanting-plants {
+    font-size: 12px;
+}
+
+.Replanting-size {
+    font-size: 11px;
+}
+
+.words {
+    font-family: 'Times New Roman', serif;
+    color: #4b4949;
+}
