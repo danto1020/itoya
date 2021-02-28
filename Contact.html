@@ -26,26 +26,29 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-3">
-              <a class="nav-link" href="index.html#Products">Products<span class="sr-only">(current)</span></a>
+              <a class="nav-link text-right" href="index.html#Products">Products<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="index.html#Services">Services</a>
+              <a class="nav-link text-right" href="index.html#Services">Services</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="index.html#Shopinfo">Shop info</a>
+              <a class="nav-link text-right" href="index.html#Shopinfo">Shop info</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="Aboutus.html">About us</a>
+              <a class="nav-link text-right" href="Aboutus.html">About us & cats</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="Contact.html">Contact</a>
+              <a class="nav-link text-right" href="Contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <!--ヘッダー終了-->
 
-<h1 class="text-center">Contact</h1>
+<div class="container text-center">
+  <h5 class="Contact-upper pt-5">Contact</h5>
+  <h5 class="Contact-downer pb-2"><span class="head-downer">お問い合わせ</span></h5>
+</div>
 
 <!-- Page Content -->
 <div class="container mt-5 p-lg-5 bg-light">
@@ -54,13 +57,13 @@
 
       <!-- 問い合わせ内容 -->
       <div class="form-group row justify-content-center">
-        <label for="select1a" class="col-sm-2 col-form-label">お問い合わせ内容</label>
+        <label for="inputSubject" class="contact-words col-sm-2 col-form-label">お問い合わせ内容</label>
         <div class="col-sm-8">
-          <select id="select1a" class="form-control">
-            <option value='' disabled selected style='display:none;'>選択してください</option>
-            <option>商品について</option>
-            <option>レッスンのご応募について</option>
-            <option>求人のご応募について</option>
+          <select id="inputSubject" class="form-control">
+            <option value="" disabled selected style='display:none;'>選択してください</option>
+            <option value="商品について">商品について</option>
+            <option value="レッスンのご応募について">レッスンのご応募について</option>
+            <option value="求人のご応募について">求人のご応募について</option>
           </select>
         </div>
       </div>
@@ -68,9 +71,9 @@
       
       <!--氏名-->
       <div class="form-group row justify-content-center">
-        <label for="inputEmail" class="col-sm-2 col-form-label">お名前</label>
+        <label for="inputName" class="contact-words col-sm-2 col-form-label">お名前</label>
         <div class="col-sm-8">
-            <input type="email" class="form-control" id="inputEmail" placeholder="氏名" required>
+            <input type="text" class="form-control" id="inputName" placeholder="氏名" required>
             <div class="invalid-feedback">入力してください</div>
         </div>
       </div>
@@ -78,8 +81,8 @@
 
       <!--Eメール-->
       <div class="form-group row justify-content-center">
-          <label for="inputEmail" class="col-sm-2 col-form-label">Eメール</label>
-          <div class="col-md-8">
+          <label for="inputEmail" class="contact-words col-sm-2 col-form-label">Eメール</label>
+          <div class="col-sm-8">
               <input type="email" class="form-control" id="inputEmail" placeholder="Eメール" required>
               <div class="invalid-feedback">入力してください</div>
           </div>
@@ -88,9 +91,9 @@
 
       <!--備考欄-->
       <div class="form-group row justify-content-center">
-          <label for="Textarea" class="col-sm-2 col-form-label">お問い合わせ</label>
-          <div class="col-md-8">
-            <textarea class="form-control" id="Textarea" rows="5" placeholder="お問い合わせ内容" required></textarea>
+          <label for="inputContent" class="contact-words col-sm-2 col-form-label">お問い合わせ</label>
+          <div class="col-sm-8">
+            <textarea class="form-control" id="inputContent" rows="5" placeholder="お問い合わせ内容" required></textarea>
             <div class="invalid-feedback">入力してください</div>
           </div>
       </div>
@@ -98,8 +101,8 @@
 
       <!--ボタンブロック-->
       <div class="form-group row justify-content-center">
-          <div class="col-md-3">
-              <button type="submit" id="contactForm-submitBtn" class="btn btn-primary btn-block">登録</button>
+          <div class="col-sm-3">
+              <button type="submit" id="contactForm-submitBtn" class="contact-words btn btn-primary btn-block">登録</button>
           </div>
       </div>
       <!--/ボタンブロック-->
@@ -157,7 +160,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <!-- StmpJs  -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- 郵便番号から住所自動入力 -->
@@ -165,7 +168,7 @@
 <!-- Validation -->
 <script>
 
-    // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+    //無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
     (function() {
         'use strict';
 
@@ -176,30 +179,41 @@
             var validation = Array.prototype.filter.call(forms, function(form) {
                 // submitボタンを押したら以下を実行
                 form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
+                    form.classList.remove('was-validated');
+
+                    if (form.checkValidity() === true) {
                         event.preventDefault();
                         event.stopPropagation();
+
+                        var subject = $('#inputSubject option:selected').val();
+                        var name = $('#inputName').val();
+                        var mail = $('#inputEmail').val();
+                        var content = $('#inputContent').val();
+
+                        $('#inputSubject').val("選択してください");
+                        $('#inputName').val("");
+                        $('#inputEmail').val("");
+                        $('#inputContent').val("");
+
+                        Email.send({
+                          SecureToken : "e0e7935a-b184-44c4-9f66-1e309dc76999",
+                          To : "itoya@itoya-engei.sakura.ne.jp",
+                          From : mail,
+                          Subject : subject,
+                          Body : name + "さんからのお問い合わせ。\n" + content
+                        }).then(
+                          message => alert(message),
+                        );
+                    } else {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        form.classList.add('was-validated');
                     }
-                    form.classList.add('was-validated');
                 }, false);
             });
         }, false);
     })();
 
-    // メールを送信する
-    $('#contactForm-submitBtn').click(function() {
-      Email.send({
-        Host : "engei-itoya.sakura.ne.jp",
-        Username : "itoya",
-        Password : "s2Ln/LiHZcbp",
-        To : 'itoya@engei-itoya.sakura.ne.jp',
-        From : "ononinn@yahoo.co.jp",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-    })
-</script>
+  </script>
 </body>
 </html>

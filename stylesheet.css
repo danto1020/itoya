@@ -1,9 +1,9 @@
-.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer, .Aboutus-upper, .Aboutus-downer, .Companyinfo-upper, .Companyinfo-downer, .Ourcats-upper, .Ourcats-downer {
+.Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer, .Aboutus-upper, .Aboutus-downer,.Contact-upper, .Contact-downer, .Companyinfo-upper, .Companyinfo-downer, .Ourcats-upper, .Ourcats-downer {
     font-family: 'Times New Roman', serif;
     color: #4b4949;
 }
 
-.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper, .Aboutus-upper, .Companyinfo-upper, .Ourcats-upper {
+.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper, .Aboutus-upper,.Contact-upper, .Companyinfo-upper, .Ourcats-upper {
     position: relative;
     display: inline-block;
     margin-bottom: 1em;
@@ -113,6 +113,19 @@
     background-color: #4b4949;
     }
 
+    .Contact-upper:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
     .Companyinfo-upper:before {
     content: '';
     position: absolute;
@@ -137,7 +150,7 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #4b4949;
-    }
+}
 
 .nav-logo {
     width:150px;
@@ -226,6 +239,30 @@ h5 .head-downer {
     cursor: pointer;
     transform: scale(1.1, 1.1);
   }
+
+  .fab-twitter-1 {
+    font-size: 3em;
+    color: #1da1f2;
+    transition: all 0.6s ease 0s
+  }
+
+  .fab-insta-1 {
+    font-size: 3em;
+    color:#fff;
+    background:radial-gradient(at 20% 120%,orange, #f15a4d 25%, #f13f79 55%, #9933ff 100%) no-repeat;
+    border-radius:20%;
+    transition: all 0.6s ease 0s;
+  }
+
+  .fab-twitter-1:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+
+  .fab-insta-1:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
   
 
   .Copyright p {
@@ -307,4 +344,14 @@ h5 .head-downer {
 .words {
     font-family: 'Times New Roman', serif;
     color: #4b4949;
+}
+
+.cats-words {
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+    color: #4b4949;
+}
+
+.contact-words {
+    font-family: 'Times New Roman', serif;
 }
