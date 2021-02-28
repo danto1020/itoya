@@ -165,9 +165,10 @@
     color: #ac0909;
 }
 
+
 .btn a {
     font-family: "Times New Roman";
-    font-size: 9px;
+    font-size: 7px;
     font-weight: 500;
     color: #222222;
     box-shadow:5px 5px 10px;
@@ -339,6 +340,12 @@ h5 .head-downer {
 
 .Replanting-size {
     font-size: 11px;
+}
+
+.Replanting-caution {
+    font-family: serif;
+    color: #463f3f;
+    font-size: 12px;
 }
 
 .words {
