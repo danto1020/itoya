@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>お問い合わせ|船橋市の総合園芸店 - 伊東屋</title>
+    <title>お問い合わせ | 船橋市の総合園芸店</title>
     <meta name="description" content="千葉県・船橋市の総合園芸店. お問い合わせ|商品・求人について">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190732242-1"></script>
@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+  <div class="footerFixed">
+  </div>
 <!-- Navigation -->
 <!--ヘッダー開始-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -50,14 +52,18 @@
             <li class="nav-item px-3">
               <a class="nav-link text-right" href="Contact.html">お問い合わせ</a>
             </li>
+            <li class="nav-item px-3 pt-4">
+              <a class="nav-link text-right lang-switch-in" href="en/Contact.html">English</a>
+            </li>
           </ul>
         </div>
+        <a class="nav-link text-right lang-switch" href="en/Contact.html">English</a>
       </nav>
       <!--ヘッダー終了-->
 
 <div class="container text-center">
-  <h5 class="Contact-upper pt-5">Contact</h5>
-  <h5 class="Contact-downer pb-2"><span class="head-downer">お問い合わせ</span></h5>
+  <h5 class="Contact-upper pt-5">お問い合わせ</h5>
+  <h5 class="Contact-downer pb-2"><span class="head-downer">Contact</span></h5>
 </div>
 
 <!-- Page Content -->
@@ -65,22 +71,6 @@
 
     <form class="needs-validation" novalidate>
 
-      <!-- 問い合わせ内容 -->
-      <div class="form-group row justify-content-center">
-        <label for="inputSubject" class="contact-words col-sm-2 col-form-label">お問い合わせ内容</label>
-        <div class="col-sm-8">
-          <select id="inputSubject" class="form-control">
-            <option value="" disabled selected style='display:none;'>選択してください</option>
-            <option value="商品について">商品について</option>
-            <option value="植物の育て方について">植物の育て方について</option>
-            <option value="レッスンのご応募について">レッスンのご応募について</option>
-            <option value="求人のご応募について">求人のご応募について</option>
-            <option value="その他">その他</option>
-          </select>
-        </div>
-      </div>
-      <!-- /問い合わせ内容 -->
-      
       <!--氏名-->
       <div class="form-group row justify-content-center">
         <label for="inputName" class="contact-words col-sm-2 col-form-label">お名前</label>
@@ -91,22 +81,38 @@
       </div>
       <!--/氏名-->
 
+      <!-- 問い合わせ内容 -->
+      <div class="form-group row justify-content-center">
+        <label for="inputSubject" class="contact-words col-sm-2 col-form-label">カテゴリー</label>
+        <div class="col-sm-8">
+          <select id="inputSubject" class="form-control">
+            <option value="" disabled selected style='display:none;'>カテゴリーを選択してください</option>
+            <option value="商品について">商品について</option>
+            <option value="植物の育て方について">植物の育て方について</option>
+            <option value="レッスンのご応募について">レッスンのご応募について</option>
+            <option value="求人のご応募について">求人のご応募について</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+      </div>
+      <!-- /問い合わせ内容 -->
+
       <!--Eメール-->
       <div class="form-group row justify-content-center">
           <label for="inputEmail" class="contact-words col-sm-2 col-form-label">Eメール</label>
           <div class="col-sm-8">
               <input type="email" class="form-control" id="inputEmail" placeholder="Eメール" required>
-              <div class="invalid-feedback">入力してください</div>
+              <div class="invalid-feedback">Eメールアドレスを入力してください</div>
           </div>
       </div>
       <!--/Eメール-->
 
       <!--備考欄-->
       <div class="form-group row justify-content-center">
-          <label for="inputContent" class="contact-words col-sm-2 col-form-label">お問い合わせ</label>
+          <label for="inputContent" class="contact-words col-sm-2 col-form-label">内容</label>
           <div class="col-sm-8">
             <textarea class="form-control" id="inputContent" rows="5" placeholder="お問い合わせ内容" required></textarea>
-            <div class="invalid-feedback">入力してください</div>
+            <div class="invalid-feedback">お問い合わせ内容を入力してください</div>
           </div>
       </div>
       <!--/備考欄-->
@@ -121,6 +127,51 @@
 
     </form>
 </div><!-- /container -->
+
+    <!--Recruit start開始-->
+    <section id="Recruit" class="text-center border-bottom pt-5 pb-3">
+      <h5 class="Aboutus-upper">求人について</h5>
+      <h5 class="Aboutus-downer pb-5">Recruit</h5>
+      <div class="container bg-light pt-5 pb-3">
+            <!--Recruit contents start-->
+              <section>
+                <table class="table text-left">
+                  <tbody>
+                   <tr>
+                     <th class="text-center">仕事内容</th>
+                     <td>	園芸店の販売・接客スタッフです。販売・接客、開閉店の店出し・片付け、商品の値付け、水やり、掃除・その他(※業務については丁寧にレクチャーしますので、未経験の方もご安心ください。)</td>
+                   </tr>
+                   <tr>
+                     <th class="text-center">勤務地</th>
+                     <td>	千葉県船橋市本町4-41-25伊東屋ビル1F</td>
+                    </tr>
+                    <tr>
+                    　<th class="text-center">募集人数</th>
+                      <td>若干名</td>
+                   </tr>
+                   <tr>
+                    　<th class="text-center">勤務時間 / 曜日</th>
+                     <td>10:00-18:30(休憩1時間)/ 火・水・金・日</td>
+                    </tr>
+                   <tr>
+                     <th class="text-center">募集条件</th>
+                     <td>・上記曜日から週2日以上出勤できる方(日曜日に出勤できる方、優遇させていただきます。)<br>・猫アレルギーの無い方</td>
+                   </tr>
+                   <tr>
+                     <th class="text-center">給与</th>
+  　                  <td>時給960円</td>
+                   </tr>
+                    <tr>
+                      <th class="text-center">待遇</th>
+                      <td>交通費支給有り(1日につき1,000円まで)</td>
+                    </tr>
+                 </tbody>
+                </table>
+                </section>
+                </div>
+              </section>
+
+
 
 <!--footer一段目 start-->
 <footer class="footer-1 bg-light">

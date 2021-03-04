@@ -157,6 +157,17 @@
     height:auto;
 }
 
+.lang-switch {
+    color: #7f7f7f;
+}
+
+@media screen and (max-width: 991px){
+    .lang-switch {display:none}
+    }
+@media screen and (min-width: 991px){
+    .lang-switch-in {display:none}
+}
+
 .fas-yes {
     color: #0c9618;
 }

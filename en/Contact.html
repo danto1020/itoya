@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | The general gardening shop in Funabashi city.</title>
+    <meta name="description" content="The general gardening shop in Funabashi, Chiba. Please contact us.">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190732242-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-190732242-1');
+    </script>
+
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font Awesome5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!--自作CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="footerFixed">
+  </div>
+<!-- Navigation -->
+<!--ヘッダー開始-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand navbar-brand-center"  href="index.html">
+    <img class="nav-logo" src="images/itoya-logo-en.png">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="index.html#Products">Products<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="index.html#Services">Services</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="index.html#Shopinfo">Shop info</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="Aboutus.html">About us & our Cats</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="Contact.html">Contact</a>
+      </li>
+      <li class="nav-item px-3 pt-4">
+        <a class="nav-link text-right lang-switch-in" href="../Contact.html">日本語</a>
+      </li>
+    </ul>
+  </div>
+  <a class="nav-link text-right lang-switch" href="../Contact.html">日本語</a>
+</nav>
+<!--ヘッダー終了-->
+
+<!--Recruit start開始-->
+<section id="Recruit" class="text-center border-bottom pt-5 pb-3">
+  <h4 class="Aboutus-upper">COUSION!!</h4>
+  <p class="causion pt-5">Please note that inquiries in English might cause inaccuracy or misleading because they are handled by automated transration.<br>If you wish to avoid this, please contact us in Japanese.<br>Contact via phone is only available in Japanese.</p>
+</section>
+
+<div class="container text-center">
+  <h4 class="Contact-upper pt-5">Contact</h4>
+</div>
+
+<!-- Page Content -->
+<div class="container mt-5 p-lg-5 bg-light mb-5">
+
+    <form class="needs-validation" novalidate>
+
+      <!--氏名-->
+      <div class="form-group row justify-content-center">
+        <label for="inputName" class="contact-words col-sm-2 col-form-label">name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+      </div>
+      <!--/氏名-->
+
+      <!-- 問い合わせ内容 -->
+      <div class="form-group row justify-content-center">
+        <label for="inputSubject" class="contact-words col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-8">
+          <select id="inputSubject" class="form-control">
+            <option value="" disabled selected style='display:none;'>Please select a category of inquiry.</option>
+            <option value="商品について">About products.</option>
+            <option value="植物の育て方について">How to grow plants.</option>
+            <option value="その他">Others</option>
+          </select>
+        </div>
+      </div>
+      <!-- /問い合わせ内容 -->
+
+      <!--Eメール-->
+      <div class="form-group row justify-content-center">
+          <label for="inputEmail" class="contact-words col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-8">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+              <div class="invalid-feedback">Please enter your Email address</div>
+          </div>
+      </div>
+      <!--/Eメール-->
+
+      <!--備考欄-->
+      <div class="form-group row justify-content-center">
+          <label for="inputContent" class="contact-words col-sm-2 col-form-label">Inquiry</label>
+          <div class="col-sm-8">
+            <textarea class="form-control" id="inputContent" rows="5" placeholder="Details" required></textarea>
+            <div class="invalid-feedback">Details</div>
+          </div>
+      </div>
+      <!--/備考欄-->
+
+      <!--ボタンブロック-->
+      <div class="form-group row justify-content-center">
+          <div class="col-sm-3">
+              <button type="submit" id="contactForm-submitBtn" class="contact-words btn btn-primary btn-block">Submit</button>
+          </div>
+      </div>
+      <!--/ボタンブロック-->
+
+    </form>
+</div><!-- /container -->
+
+
+
+<!--footer一段目 start-->
+<footer class="footer-1 bg-light">
+  <div class="container text-center">
+    <ul class="nav justify-content-around">
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="index.html#Products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="index.html#Services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="index.html#Shopinfo">Shop info</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="Aboutus.html">About us & our Cats</a>
+      </li>
+      <li class="nav-item">
+        <a class="footer-nav-link nav-link" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<!--footer一段目 end-->
+<!--footer二段目 start-->
+<footer class="footer-2 bg-dark text-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div>
+        <a href="https://twitter.com/itoyafunabashi">
+        <i class="fab fab-twitter fa-twitter pt-3 pr-3 pl-3"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/itoyafunabashi/">
+        <i class="fab fab-insta fa-instagram pt-3 pr-3 pl-3"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="Copyright container text-center py-3">
+    <p>Copyright &copy;2021 ITOYA System Club, ALL Rights Reserved.</p>
+  </div>
+  <div id="page_top"><a href="#"></a></div>
+</footer> 
+<!--footer二段目 end-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<!-- StmpJs  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- 郵便番号から住所自動入力 -->
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<!-- Validation -->
+<script>
+
+    //無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+    (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+            // カスタムブートストラップ検証スタイルを適用するすべてのフォームを取得
+            var forms = document.getElementsByClassName('needs-validation');
+            // ループして帰順を防ぐ
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                // submitボタンを押したら以下を実行
+                form.addEventListener('submit', function(event) {
+                    form.classList.remove('was-validated');
+
+                    if (form.checkValidity() === true) {
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        var subject = $('#inputSubject option:selected').val();
+                        var name = $('#inputName').val();
+                        var mail = $('#inputEmail').val();
+                        var content = $('#inputContent').val();
+
+                        $('#inputSubject').val("選択してください");
+                        $('#inputName').val("");
+                        $('#inputEmail').val("");
+                        $('#inputContent').val("");
+
+                        Email.send({
+                          SecureToken : "e0e7935a-b184-44c4-9f66-1e309dc76999",
+                          To : "itoya@itoya-engei.sakura.ne.jp",
+                          From : mail,
+                          Subject : subject,
+                          Body : name + "さんからのお問い合わせ。\n" + content
+                        }).then(
+                          message => alert(message),
+                        );
+                    } else {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        form.classList.add('was-validated');
+                    }
+                }, false);
+            });
+        }, false);
+    })();
+
+  </script>
+</body>
+</html>

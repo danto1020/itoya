@@ -1,0 +1,389 @@
+.nav-link, .Products-upper, .Products-downer, .Services-upper, .Services-downer, .Shopinfo-upper, .Shopinfo-downer, .News-upper, .News-downer, .recommend-upper, .recommend-downer, .dealing-upper, .dealing-downer .Cacuti-Succulents-upper, .Cacuti-Succulents-downer, .Aboutus-upper, .Aboutus-downer,.Contact-upper, .Contact-downer, .Companyinfo-upper, .Companyinfo-downer, .Ourcats-upper, .Ourcats-downer {
+    font-family: 'Times New Roman', serif;
+    color: #4b4949;
+}
+
+.Products-upper, .Services-upper, .Shopinfo-upper, .News-upper, .Cacuti-Succulents-upper, .recommend-upper, .dealing-upper, .Aboutus-upper,.Contact-upper, .Companyinfo-upper, .Ourcats-upper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+
+    .Products-upper:before  {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Services-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Shopinfo-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .News-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Cacuti-Succulents-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .recommend-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .dealing-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Aboutus-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Contact-upper:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Companyinfo-upper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+    }
+
+    .Ourcats-upper:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4b4949;
+}
+
+.nav-logo {
+    width:100px;
+    height:auto;
+}
+
+.lang-switch {
+    color: #7f7f7f;
+}
+
+@media screen and (max-width: 991px){
+    .lang-switch {display:none}
+    }
+@media screen and (min-width: 991px){
+    .lang-switch-in {display:none}
+}
+
+.fas-yes {
+    color: #0c9618;
+}
+
+.fas-no {
+    color: #ac0909;
+}
+
+/*ボタンの英語部分のフォント*/
+.btn a {
+    font-family: "Times New Roman";
+    font-size: 11px;
+    font-weight: 500;
+    color: #222222;
+    box-shadow:5px 5px 10px;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    display: block;
+    width: 200px;
+    padding: 60px 0 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px #222222;
+}
+.btn a:hover {
+    color: #ffffff;
+    background-color: #463f3f;
+}
+
+/*ボタンの上部、日本語部分のフォント*/
+.row .btn a .upper {
+    font-size: 14px;
+    font-family: serif;
+}
+
+/*見出し(h5)の下部、英語部分のフォントサイズ変更*/
+h5 .head-downer {
+    font-size: 15px;
+    font-family:'Times New Roman';
+}
+
+.head-Shop, .head-Accessmap {
+    font-family:'Times New Roman', serif;
+    color: #463f3f;
+}
+
+
+.table {
+      font-size: 10px;
+      font-family:'Times New Roman', serif; 
+      color: #463f3f;
+}
+
+.Garden-tree-pruning-image {
+    width: 100%;
+}
+
+.cats-image {
+    width: 100%;
+}
+  
+  .footer-nav-link {
+      font-family:'Times New Roman', serif;
+      color: #463f3f;
+  }
+
+  .fab-insta, .fab-twitter {
+    font-size: 3em;
+    color: #fff;
+    transition: all 0.6s ease 0s;
+  }
+
+
+  .fab-insta:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+  
+  
+  .fab-twitter:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+
+  .fab-twitter-1 {
+    font-size: 3em;
+    color: #1da1f2;
+    transition: all 0.6s ease 0s
+  }
+
+  .fab-insta-1 {
+    font-size: 3em;
+    color:#fff;
+    background:radial-gradient(at 20% 120%,orange, #f15a4d 25%, #f13f79 55%, #9933ff 100%) no-repeat;
+    border-radius:20%;
+    transition: all 0.6s ease 0s;
+  }
+
+  .fab-twitter-1:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+
+  .fab-insta-1:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+  
+
+  .Copyright p {
+      font-family:'Times New Roman', serif;
+      font-size: 10px;
+  }
+
+
+#page_top{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: #a19e9ead;
+	opacity: 0.8;
+	border-radius: 50%;
+}
+
+#page_top a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+}
+
+#page_top a::before{
+    position: absolute;
+      top: -5px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f106';
+      font-size: 30px;
+      color: #fff;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      text-align: center;
+}
+
+.Products-main {
+    width: 100%;
+    opacity: 0.9;
+}
+
+.recommend-all {
+      width: 100%;
+}
+
+.recommend-1-a{
+    font-family: serif;
+    color: #463f3f;
+}
+.recommend-1-b {
+    font-family: serif;
+    color: #463f3f;
+}
+
+ .link-disable {
+   background-color: #463f3f;
+   pointer-events: none;
+ }
+
+ .color-white {
+  color: #fff;
+ }
+
+
+.Replanting-plants {
+    font-size: 12px;
+}
+
+.Replanting-size {
+    font-size: 11px;
+}
+
+.Replanting-caution {
+    font-family: serif;
+    color: #463f3f;
+    font-size: 12px;
+}
+
+.words {
+    font-family: 'Times New Roman', serif;
+    color: #4b4949;
+}
+
+.cats-words {
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+    color: #4b4949;
+}
+
+.contact-words {
+    font-family: 'Times New Roman', serif;
+}
+
+.contact-body {
+    display: flex; 
+    flex-flow: column;
+    min-height: 100vh;
+  }
+
+.contact-main {
+    flex: 1;
+  }
+
+.causion {
+    font-size: 20px;
+}
