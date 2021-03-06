@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://engei-itoya.com/</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ja"
+               href="https://engei-itoya.com/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://engei-itoya.com/en/"/>
+  </url>
+  <url>
+    <loc>https://engei-itoya.com/en/</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ja"
+               href="https://engei-itoya.com/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://engei-itoya.com/en/"/>
+  <url>
     <loc>https://engei-itoya.com/index.html</loc>
     <xhtml:link
                rel="alternate"
