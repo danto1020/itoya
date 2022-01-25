@@ -66,67 +66,14 @@
   <h5 class="Contact-downer pb-2"><span class="head-downer">Contact</span></h5>
 </div>
 
-<!-- Page Content -->
+
 <div class="container mt-5 p-lg-5 bg-light">
 
-    <form class="needs-validation" novalidate>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV0X4RM6Qkpdh-XuOAxBX33lChEH3jEL1pNnj7d1CmB_0qcA/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
-      <!--氏名-->
-      <div class="form-group row justify-content-center">
-        <label for="inputName" class="contact-words col-sm-2 col-form-label">お名前</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control" id="inputName" placeholder="氏名" required>
-            <div class="invalid-feedback">入力してください</div>
-        </div>
-      </div>
-      <!--/氏名-->
+</div>
 
-      <!-- 問い合わせ内容 -->
-      <div class="form-group row justify-content-center">
-        <label for="inputSubject" class="contact-words col-sm-2 col-form-label">カテゴリー</label>
-        <div class="col-sm-8">
-          <select id="inputSubject" class="form-control">
-            <option value="" disabled selected style='display:none;'>カテゴリーを選択してください</option>
-            <option value="商品について">商品について</option>
-            <option value="植物の育て方について">植物の育て方について</option>
-            <option value="レッスンのご応募について">レッスンのご応募について</option>
-            <option value="求人のご応募について">求人のご応募について</option>
-            <option value="その他">その他</option>
-          </select>
-        </div>
-      </div>
-      <!-- /問い合わせ内容 -->
-
-      <!--Eメール-->
-      <div class="form-group row justify-content-center">
-          <label for="inputEmail" class="contact-words col-sm-2 col-form-label">Eメール</label>
-          <div class="col-sm-8">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Eメール" required>
-              <div class="invalid-feedback">Eメールアドレスを入力してください</div>
-          </div>
-      </div>
-      <!--/Eメール-->
-
-      <!--備考欄-->
-      <div class="form-group row justify-content-center">
-          <label for="inputContent" class="contact-words col-sm-2 col-form-label">内容</label>
-          <div class="col-sm-8">
-            <textarea class="form-control" id="inputContent" rows="5" placeholder="お問い合わせ内容" required></textarea>
-            <div class="invalid-feedback">お問い合わせ内容を入力してください</div>
-          </div>
-      </div>
-      <!--/備考欄-->
-
-      <!--ボタンブロック-->
-      <div class="form-group row justify-content-center">
-          <div class="col-sm-3">
-              <button type="submit" id="contactForm-submitBtn" class="contact-words btn btn-primary btn-block">送信</button>
-          </div>
-      </div>
-      <!--/ボタンブロック-->
-
-    </form>
-</div><!-- /container -->
+<!-- Page Content -->
 
     <!--Recruit start開始-->
     <section id="Recruit" class="text-center border-bottom pt-5 pb-3">
@@ -151,7 +98,7 @@
                    </tr>
                    <tr>
                     　<th class="text-center">勤務時間 / 曜日</th>
-                     <td>10:00-18:30(休憩1時間)/ 火・水・金・日</td>
+                     <td>10:00-18:30(休憩1時間)/ 火・水・木・日</td>
                     </tr>
                    <tr>
                      <th class="text-center">募集条件</th>
@@ -232,50 +179,50 @@
 <script>
 
     //無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
-    (function() {
-        'use strict';
+    // (function() {
+    //     'use strict';
 
-        window.addEventListener('load', function() {
-            // カスタムブートストラップ検証スタイルを適用するすべてのフォームを取得
-            var forms = document.getElementsByClassName('needs-validation');
-            // ループして帰順を防ぐ
-            var validation = Array.prototype.filter.call(forms, function(form) {
-                // submitボタンを押したら以下を実行
-                form.addEventListener('submit', function(event) {
-                    form.classList.remove('was-validated');
+    //     window.addEventListener('load', function() {
+    //         // カスタムブートストラップ検証スタイルを適用するすべてのフォームを取得
+    //         var forms = document.getElementsByClassName('needs-validation');
+    //         // ループして帰順を防ぐ
+    //         var validation = Array.prototype.filter.call(forms, function(form) {
+    //             // submitボタンを押したら以下を実行
+    //             form.addEventListener('submit', function(event) {
+    //                 form.classList.remove('was-validated');
 
-                    if (form.checkValidity() === true) {
-                        event.preventDefault();
-                        event.stopPropagation();
+    //                 if (form.checkValidity() === true) {
+    //                     event.preventDefault();
+    //                     event.stopPropagation();
 
-                        var subject = $('#inputSubject option:selected').val();
-                        var name = $('#inputName').val();
-                        var mail = $('#inputEmail').val();
-                        var content = $('#inputContent').val();
+    //                     var subject = $('#inputSubject option:selected').val();
+    //                     var name = $('#inputName').val();
+    //                     var mail = $('#inputEmail').val();
+    //                     var content = $('#inputContent').val();
 
-                        $('#inputSubject').val("選択してください");
-                        $('#inputName').val("");
-                        $('#inputEmail').val("");
-                        $('#inputContent').val("");
+    //                     $('#inputSubject').val("選択してください");
+    //                     $('#inputName').val("");
+    //                     $('#inputEmail').val("");
+    //                     $('#inputContent').val("");
 
-                        Email.send({
-                          SecureToken : "e0e7935a-b184-44c4-9f66-1e309dc76999",
-                          To : "itoya@itoya-engei.sakura.ne.jp",
-                          From : mail,
-                          Subject : subject,
-                          Body : name + "さんからのお問い合わせ。\n" + content
-                        }).then(
-                          message => alert(message),
-                        );
-                    } else {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        form.classList.add('was-validated');
-                    }
-                }, false);
-            });
-        }, false);
-    })();
+    //                     Email.send({
+    //                       SecureToken : "e0e7935a-b184-44c4-9f66-1e309dc76999",
+    //                       To : "itoya@itoya-engei.sakura.ne.jp",
+    //                       From : mail,
+    //                       Subject : subject,
+    //                       Body : name + "さんからのお問い合わせ。\n" + content
+    //                     }).then(
+    //                       message => alert(message),
+    //                     );
+    //                 } else {
+    //                     event.preventDefault();
+    //                     event.stopPropagation();
+    //                     form.classList.add('was-validated');
+    //                 }
+    //             }, false);
+    //         });
+    //     }, false);
+    // })();
 
   </script>
 </body>
